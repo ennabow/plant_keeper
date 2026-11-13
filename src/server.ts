@@ -6,7 +6,7 @@ const start = async (): Promise<void> => {
     await seed();
     const app = createApp();
     app.listen(config.port, () => {
-        console.log(`PlantKeeper API listening on http://localhost:${config.port}/api/v1`);
+        console.log(`PlantKeeper API listening on http://10.0.2.2:${config.port}/api/v1`);
     });
 };
 
